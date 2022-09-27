@@ -23,16 +23,9 @@ if(process.env.NODE_ENV === 'development') {
 //app.use('/api/v1/profile', require('./routes/profile'))
 app.use('/api/v1/profile', profile)
 
-// Handle production
-// if (process.env.NODE_ENV === 'production') {
-//     // Set static folder
-//     app.use(express.static(__dirname + '/public/'))
 
-//     // Handle SPA (single page application)
-//     app.get(/.*/, (req, res) => res.sendFile(__dirname + '/public/index.html'))
-// }
 
-const port = process.env.PORT || 5003 //|| 8000
+const port = process.env.PORT || 8080
 
 
 app.listen(port, () => {
